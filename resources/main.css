@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+.testimonials div p, .testimonials div .card-top .card-headers h3, .main-text p {
+  font-family: "Spartan", sans-serif;
+  font-weight: 400;
+}
+
+.testimonials div .card-top .card-headers h2, .reviews h2, .main-text h1 {
+  font-family: "Spartan", sans-serif;
+  font-weight: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* BACKGROUND IMAGES */
+.bg-desktop {
+  display: none;
+}
+
+.bg-top {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.bg-bottom {
+  position: fixed;
+  z-index: -1;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+
+main {
+  width: 340px;
+  margin: 0 auto;
+}
+
+.main-text h1 {
+  margin: 0 auto;
+  width: 80%;
+  color: #502050;
+  font-size: 28px;
+  text-align: center;
+}
+.main-text p {
+  margin: 0 auto;
+  color: #937b92;
+  font-size: 15px;
+  text-align: center;
+}
+
+.reviews .review {
+  background-color: #f7f2f7;
+  border-radius: 10px;
+}
+.reviews .stars {
+  display: flex;
+  justify-content: center;
+}
+.reviews .stars img {
+  padding: 0 2px;
+}
+.reviews h2 {
+  font-size: 15px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.testimonials div {
+  background-color: #502050;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.testimonials div .card-top {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  width: 80%;
+  margin: 0 auto;
+}
+.testimonials div .card-top img {
+  border-radius: 100px;
+  width: 50px;
+  margin-right: 25px;
+}
+.testimonials div .card-top .card-headers {
+  display: flex;
+  flex-direction: column;
+}
+.testimonials div .card-top .card-headers h2 {
+  font-size: 12px;
+  color: white;
+}
+.testimonials div .card-top .card-headers h3 {
+  color: #ee68a4;
+  font-size: 12px;
+}
+.testimonials div p {
+  color: white;
+  font-size: 12px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -2,7 +2,124 @@
 @import "util/variables";
 @import "util/placeholders";
 
-body {
+* {
   margin: 0;
   padding: 0;
+}
+
+/* BACKGROUND IMAGES */
+
+.bg-desktop {
+  display: none;
+}
+
+.bg-top {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.bg-bottom {
+  position: fixed;
+  z-index: -1;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+
+main {
+  width: 340px;
+  margin: 0 auto;
+}
+
+.main-text {
+
+  h1 {
+    margin: 0 auto;
+    width: 80%;
+    @extend %spartan-700;
+    color: $dark-magenta;
+    font-size: 28px;
+    text-align: center;
+  }
+
+  p {
+    margin: 0 auto;
+    @extend %spartan-400;
+    color: $dark-gray-magenta;
+    font-size: 15px;
+    text-align: center;
+  }
+}
+
+.reviews {
+  .review {
+    background-color: $light-gray-magenta;
+    border-radius: 10px;
+  }
+  .stars {
+    display: flex;
+    justify-content: center;
+
+    img {
+      padding: 0 2px;
+    }
+  }
+
+  h2 {
+    @extend %spartan-700;
+    font-size: 15px;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+.testimonials {
+  div {
+    background-color: $dark-magenta;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+
+    .card-top {
+      display: flex;
+      align-items: center;
+      padding-top: 40px;
+      width: 80%;
+      margin: 0 auto;
+
+      img {
+        border-radius: 100px;
+        width: 50px;
+        margin-right: 25px;
+      }
+
+      .card-headers {
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+          @extend %spartan-700;
+          font-size: 12px;
+          color: $white;
+        }
+
+        h3 {
+          @extend %spartan-400;
+          color: $soft-pink;
+          font-size: 12px;
+        }
+      }
+    }
+
+    p {
+      @extend %spartan-400;
+      color: $white;
+      font-size: 12px;
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
 }
