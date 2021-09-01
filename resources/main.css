@@ -273,8 +273,9 @@ main {
     height: 233px;
   }
   .testimonial p {
+    font-size: 12px;
     padding: 0;
-    width: 85%;
+    width: 80%;
   }
 
   #testimonial-2 {
